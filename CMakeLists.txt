@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(pathtracer)
+project(raytracer)
 
 aux_source_directory(src SRC)
 add_executable(${PROJECT_NAME} ${SRC})
@@ -14,7 +14,7 @@ find_package(imgui REQUIRED)
 
 find_package(glm REQUIRED)
 
-set(CMAKE_BUILD_TYPE Debug)
+# set(CMAKE_BUILD_TYPE Debug)
 
 target_link_libraries(
   ${PROJECT_NAME}

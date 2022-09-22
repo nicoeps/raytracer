@@ -14,7 +14,6 @@ class Shape {
     public:
         virtual bool intersect(const Ray& ray, Shape*& found_shape, double& t) = 0;
         virtual void getSurfaceProperties(const Vector3& hit,  Vector3& normal, Vector2& uv) = 0;
-
         virtual bool bounding_box(AABB& aabb) = 0;
 
         Vector3 min;
